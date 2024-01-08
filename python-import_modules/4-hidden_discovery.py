@@ -1,6 +1,12 @@
 #!/usr/bin/python3
-import dis
+import types
 import sys
+
+def print_names(module):
+    names = [name for name in dir(module) if not name.startswith('__')]
+    names.sort()
+    for name in names:
+        print(name)
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -10,17 +16,14 @@ if __name__ == "__main__":
 
     try:
         with open(module_file, 'rb') as file:
+            magic = file.read(4)
+            timestamp = file.read(4)
             code = file.read()
 
-        bytecode = dis.Bytecode(code)
-        names = set()
+        module = types.ModuleType("hidden_4")
+        exec(code, module.__dict__)
 
-        for instruction in bytecode:
-            if instruction.opname == 'LOAD_GLOBAL' and not instruction.argrepr.startswith('__'):
-                names.add(instruction.argrepr)
-
-        for name in sorted(names):
-            print(name)
+        print_names(module)
 
     except Exception as e:
         sys.exit("Error: {}".format(e))
