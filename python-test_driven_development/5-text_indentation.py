@@ -21,7 +21,6 @@ def text_indentation(text):
         current_line += char
         if char in separators:
             lines.append(current_line.strip())
-            lines.append("") # Add an empty line
             current_line = ""
 
     if current_line:
