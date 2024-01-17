@@ -1,0 +1,19 @@
+# Test Case 1
+>>> text_indentation("Lorem ipsum dolor sit amet. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? Non autem hoc: igitur ne illud quidem.")
+Lorem ipsum dolor sit amet.
+
+Quonam modo?
+
+Utrum igitur tibi litteram videor an totas paginas commovere?
+
+Non autem hoc: igitur ne illud quidem.
+
+# Test Case 2
+>>> text_indentation("One sentence. Another sentence.")
+One sentence.
+
+Another sentence.
+
+# Test Case 3
+>>> text_indentation("No newlines.")
+No newlines.

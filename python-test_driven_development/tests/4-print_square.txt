@@ -1,0 +1,27 @@
+# Test Case 1
+>>> print_square(4)
+####
+####
+####
+####
+
+# Test Case 2
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+# Test Case 3
+>>> print_square(0)
+# (output should be an empty line)
+
+# Test Case 4
+>>> print_square(1)
+#
