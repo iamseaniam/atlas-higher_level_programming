@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+this is some documentation
+"""
+
 
 class Rectangle:
     def __init__(self, width=0, height=0):
