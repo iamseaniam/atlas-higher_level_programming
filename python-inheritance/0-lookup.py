@@ -4,4 +4,5 @@
 
 def lookup(obj):
     '''Document tation'''
-    return(obj)
+    for obj in list:
+        print(obj.name, obj.roll, sep=" ")
