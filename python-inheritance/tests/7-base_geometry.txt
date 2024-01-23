@@ -1,0 +1,27 @@
+# Test Case: Check BaseGeometry Class Functionality
+
+# Case 1: Class creation
+-- Instantiate BaseGeometry --
+bg = BaseGeometry()
+
+# Case 2: Valid integer validation
+-- Validate integer value 12 --
+bg.integer_validator("my_int", 12)
+
+-- Validate integer value 89 --
+bg.integer_validator("width", 89)
+
+# Case 3: Invalid integer validation
+-- Validate non-integer value "John" --
+Expected Output:
+[TypeError] name must be an integer
+
+-- Validate integer value 0 --
+Expected Output:
+[ValueError] age must be greater than 0
+
+-- Validate integer value -4 --
+Expected Output:
+[ValueError] distance must be greater than 0
+
+# End of Test Case
