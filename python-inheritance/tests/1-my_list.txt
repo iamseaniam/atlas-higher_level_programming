@@ -1,0 +1,30 @@
+# Test Case: Check MyList Class Functionality
+
+# Case 1: Class creation
+-- Instantiate MyList --
+my_list = MyList()
+
+# Case 2: Append elements to the list
+-- Append elements to the list --
+my_list.append(1)
+my_list.append(4)
+my_list.append(2)
+my_list.append(3)
+my_list.append(5)
+
+# Case 3: Regular print
+-- Print the list --
+Expected Output:
+[1, 4, 2, 3, 5]
+
+# Case 4: Print sorted
+-- Print the list sorted --
+Expected Output:
+[1, 2, 3, 4, 5]
+
+# Case 5: Check if the original list remains unchanged
+-- Check if the original list remains unchanged --
+Expected Output:
+[1, 4, 2, 3, 5]
+
+# End of Test Case
