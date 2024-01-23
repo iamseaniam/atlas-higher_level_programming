@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''this is how you document'''
 
+
 class BaseGeometry:
     '''BaseGeometry class definition'''
 
