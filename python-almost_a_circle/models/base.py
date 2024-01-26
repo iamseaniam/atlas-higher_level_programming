@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Base documentation"""
 
-class base:
+class Base:
     """this stuff is througly documented"""
     __nb_objects = 0
     
