@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 """Rectangle module"""
 
-
 from .base import Base
-
 
 class Rectangle(Base):
     """Rectangle class inheriting from Base"""
@@ -11,10 +9,10 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """Constructor for Rectangle class"""
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -49,7 +47,7 @@ class Rectangle(Base):
     def x(self, value):
         """Setter for X"""
         self.validate_integer(value, "x")
-        self.validate_positive(value, "x")
+        self.validate_non_negative(value, "x")
         self.__x = value
 
     @property
@@ -61,15 +59,15 @@ class Rectangle(Base):
     def y(self, value):
         """Setter for Y"""
         self.validate_integer(value, "y")
-        self.validate_positive(value, "y")
+        self.validate_non_negative(value, "y")
         self.__y = value
 
     def validate_integer(self, value, attribute_name):
         """Validate if the value is an integer"""
         if not isinstance(value, int):
-            raise TypeError(f"{attribute_name} must be > 0")
+            raise TypeError(f"{attribute_name} must be an integer")
 
-    def validate_postive(self, value, attribute_name):
+    def validate_positive(self, value, attribute_name):
         """Validate if the value is greater than 0"""
         if value <= 0:
             raise ValueError(f"{attribute_name} must be > 0")
