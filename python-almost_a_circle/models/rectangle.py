@@ -1,6 +1,5 @@
-#!/usr/bin/python3\
+#!/usr/bin/python3
 """Rectangle module"""
-
 
 from .base import Base
 
@@ -15,42 +14,42 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-        @property
-        def width(self):
-            """Getter for Width"""
-            return self.__width
-        
-        @width.setter
-        def width(self, value):
-            """Setter for Width"""
-            self.__width = value
-        
-        @property
-        def height(self):
-            """Getter for height"""
-            return self.__height
+    @property
+    def width(self):
+        """Getter for Width"""
+        return self.__width
 
-        @height.setter        
-        def height (self, value):
-            """setter for Height"""
-            self.__height = value
+    @width.setter
+    def width(self, value):
+        """Setter for Width"""
+        self.__width = value
 
-        @property
-        def x(self):
-            """getter for X"""
-            return self.x
+    @property
+    def height(self):
+        """Getter for height"""
+        return self.__height
 
-        @x.setter
-        def x(self, value):
-            """Setter for X"""
-            self.__x = value
+    @height.setter
+    def height(self, value):
+        """Setter for Height"""
+        self.__height = value
 
-        @property
-        def y(self):
-            """getter for y"""
-            return self.__y
+    @property
+    def x(self):
+        """Getter for X"""
+        return self.__x
 
-        @y.setter
-        def y(self, value):
-            """Setter for Y"""
-            self.__y = value
+    @x.setter
+    def x(self, value):
+        """Setter for X"""
+        self.__x = value
+
+    @property
+    def y(self):
+        """Getter for y"""
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        """Setter for Y"""
+        self.__y = value
