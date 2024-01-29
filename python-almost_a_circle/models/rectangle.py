@@ -91,5 +91,8 @@ class Rectangle(Base):
             print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
-        """Overide the __str__ method"""
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        """Override the __str__ method"""
+        return (
+            f"[Rectangle] ({self.id}) "
+            f"{self.x}/{self.y} - {self.width}/{self.height}"
+        )
