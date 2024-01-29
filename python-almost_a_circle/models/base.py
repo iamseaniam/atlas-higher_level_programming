@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Base documentation"""
+"""Base Class keeps id or makes one if it doesnt have an id"""
 
 
 class Base:
-    """This class is thoroughly documented"""
+    """keeps or makes a new id"""
     __nb_objects = 0
 
     def __init__(self, id=None):
