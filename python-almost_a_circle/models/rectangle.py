@@ -12,14 +12,14 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
         
-        def width(self):
-            return self.__width
-        
-        def height(self):
-            return self.__height
+        def set_width(self, value):
+            self.__width = value
 
-        def x(self):
-            return self.__x
+        def set_height(self, value):
+            self.__height = value
 
-        def y(self):
-            return self.__y
+        def set_x(self, value):
+            self.__x = value
+
+        def set_y(self, value):
+            self.__y = value
