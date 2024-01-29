@@ -19,7 +19,7 @@ class Rectangle(Base):
             """Getter for Width"""
             return self.__width
         
-        def width (self, value):
+        def width(self, value):
             """Setter for Width"""
             self.__width = value
             
