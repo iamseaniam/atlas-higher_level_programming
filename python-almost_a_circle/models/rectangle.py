@@ -24,6 +24,8 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """Setter for Width"""
+        self.validate_integer(value, "width")
+        self.validate_positive(value, "width")
         self.__width = value
 
     @property
@@ -34,6 +36,8 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """Setter for Height"""
+        self.validate_integer(value, "height")
+        self.validate_positive(value, "height")
         self.__height = value
 
     @property
@@ -44,6 +48,8 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """Setter for X"""
+        self.validate_integer(value, "x")
+        self.validate_positive(value, "x")
         self.__x = value
 
     @property
@@ -54,4 +60,6 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """Setter for Y"""
+        self.validate_integer(value, "y")
+        self.validate_positive(value, "y")
         self.__y = value
