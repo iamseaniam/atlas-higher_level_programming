@@ -63,3 +63,18 @@ class Rectangle(Base):
         self.validate_integer(value, "y")
         self.validate_positive(value, "y")
         self.__y = value
+
+    def validate_integer(self, value, attribute_name):
+        """Validate if the value is an integer"""
+        if not isinstance(value, int):
+            raise TypeError(f"{attribute_name} must be > 0")
+
+    def validate_postive(self, value, attribute_name):
+        """Validate if the value is greater than 0"""
+        if value <= 0:
+            raise ValueError(f"{attribute_name} must be > 0")
+
+    def validate_non_negative(self, value, attribute_name):
+        """Validate if the value is greater than or equal to 0"""
+        if value < 0:
+            raise ValueError(f"{attribute_name} must be >= 0")
