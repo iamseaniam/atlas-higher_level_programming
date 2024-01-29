@@ -11,3 +11,15 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
+        
+        def width(self):
+            return self.__width
+        
+        def height(self):
+            return self.__height
+
+        def x(self):
+            return self.__x
+
+        def y(self):
+            return self.__y
