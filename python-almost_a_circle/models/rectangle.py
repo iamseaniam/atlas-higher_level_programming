@@ -78,3 +78,7 @@ class Rectangle(Base):
         """Validate if the value is greater than or equal to 0"""
         if value < 0:
             raise ValueError(f"{attribute_name} must be >= 0")
+
+    def area(self):
+        """calculate and return the area of the rectangle"""
+        return self.__width * self.__height
