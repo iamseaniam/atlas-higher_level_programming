@@ -29,7 +29,7 @@ class Square(Rectangle):
     def update(self, *args, **kwargs):
         """Update attributes based on given arguments and keyword arguments"""
         attributes = ["id", "size", "x", "y"]
-        
+
         for i in range(len(args)):
             setattr(self, attributes[i], args[i])
 
