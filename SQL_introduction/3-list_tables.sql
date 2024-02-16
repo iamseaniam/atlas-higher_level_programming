@@ -1,5 +1,3 @@
---List all tables of a database
+-- List all tables of a database
 
-USE mysql;
-
-SHOW TABLES IF EXISTS;
+SHOW TABLES;
