@@ -1,4 +1,3 @@
 -- listing all rows in a table
 
-SHOW TABLE ROW first_table;
-
+SELECT * FROM first_table;
