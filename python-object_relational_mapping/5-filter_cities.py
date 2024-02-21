@@ -19,7 +19,7 @@ def filter_cities(username, password, database_name, state_name):
         cursor.execute("SELECT cities.name FROM cities JOIN states ON cities.state_id = states.id WHERE states.name = %s ORDER BY cities.id ASC", (state_name,))
         cities = cursor.fetchall()
         city_names = [city[0] for city in cities]
-        print(", ".join(city_names))n
+        print(", ".join(city_names))
         cursor.close()
         db.close()
 
