@@ -2,5 +2,5 @@
 
 const myVar = "JavaScript is amazing";
 
-const console.log(myVar);
+console.log(myVar);
 
