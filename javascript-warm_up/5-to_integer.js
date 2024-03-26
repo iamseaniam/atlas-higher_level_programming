@@ -6,4 +6,3 @@ if (isNaN(myargs[0])) {
 } else {
   console.log('My number: ' + parseInt(myargs[0]));
 }
-
